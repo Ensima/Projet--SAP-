@@ -37,7 +37,9 @@ Une **architecture hybride** : les données de santé et les applications critiq
 │   ├── budget_partie1.xlsx            budget avec hypothèses modifiables
 │   └── couts_options/                 coûts théoriques des 3 options (A, B, C)
 └── proposition_logiciel_maquette/
-    └── README.md                      logiciels de maquette et test Azure (à choisir en groupe)
+    ├── README.md                      logiciels de maquette et test Azure (à choisir en groupe)
+    ├── TOPOLOGIE.md                   topologie GNS3 + VM + Azure, adressage, pas-à-pas
+    └── topologie_maquette.png/.drawio schéma de la maquette
 ```
 
 ## Outils

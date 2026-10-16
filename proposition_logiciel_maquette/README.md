@@ -10,6 +10,8 @@ Ce dossier présente aux membres du groupe les logiciels possibles pour la maque
 - **Aucun outil ne fait tout bien.** Packet Tracer est simple mais ne fait ni vrais serveurs ni cloud. GNS3 et EVE-NG font tout, mais sont lourds.
 - **Proposition par défaut :** Packet Tracer pour la topologie des 5 sites, des VM (VirtualBox ou VMware) pour les serveurs, et un pfSense/OPNsense en VM relié à Azure for Students pour démontrer l'hybride. À valider par le groupe : voir la section 3.
 
+**Topologie détaillée de la maquette (GNS3 + VM + Azure), plan d'adressage et pas-à-pas :** voir [`TOPOLOGIE.md`](TOPOLOGIE.md).
+
 ## Ce qu'on doit décider ensemble
 
 1. Quel outil réseau (Packet Tracer, GNS3 ou EVE-NG) ?
