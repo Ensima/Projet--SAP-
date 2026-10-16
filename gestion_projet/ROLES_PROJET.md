@@ -14,7 +14,7 @@ Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposit
 | **1. Réseau GNS3** | Membre A | ★★★ difficile | Élevée | Travaille en duo avec B (réseau et pare-feu sont liés) |
 | **2. Pare-feu et Azure** | Membre B | ★★★ difficile | Élevée | Travaille en duo avec A |
 | **3. Serveurs Windows** | Membre C | ★★☆ moyen | Moyenne |  fournit l'AD aux rôles 2 et 4 |
-| **4. Services et supervision** | Rayan | ★★☆ moyen, le plus guidé | Moyenne |
+| **4. Services et supervision** |  | ★★☆ moyen, le plus guidé | Moyenne |
 
 Comment choisir :
 - **Rôle 1** : la personne la plus à l'aise en réseau (VLAN, routage, Cisco).
@@ -37,7 +37,6 @@ Comment choisir :
 - Préparer la soutenance : PowerPoint commun, déroulé de la démo, répartition de la parole.
 - Faire passer la **checklist de tests** (TOPOLOGIE.md, étape 7) avant la soutenance.
 - **Suivi du coût Azure** (pas de technique) : le membre B ajoute Ernest en lecture sur l'abonnement, et Ernest vérifie le coût dans *Cost Management* pour le budget.
-- **Suivi de Rayan** : un point de 5 minutes chaque soir sur ce qui est fait et ce qui bloque.
 
 ### À installer
 - [diagrams.net](https://app.diagrams.net) (en ligne ou draw.io Desktop), Excel ou LibreOffice, PowerPoint.
@@ -127,7 +126,7 @@ Configurations pfSense exportées (*Diagnostics → Backup*), tableau des règle
 
 ## Rôle 3 : Serveurs Windows (Membre C)
 
-**Difficulté** : ★★☆ moyen · **Matthieu** · **charge moyenne** · **parrain de Rayan**
+**Difficulté** : ★★☆ moyen · **Matthieu** · **charge moyenne** .
 
 ### Responsabilités
 L'annuaire et les services Windows : Active Directory, DNS, GPO, poste client, synchronisation vers Entra ID.
@@ -160,7 +159,7 @@ VM exportées, document « annuaire » (OU, groupes, utilisateurs), liste des GP
 
 ## Rôle 4 : Services et supervision (Rayan)
 
-**Difficulté** : ★★☆ moyen, le rôle le plus guidé · **1 personne** · **charge moyenne** · **parrain : Membre C**
+**Difficulté** : ★★☆ moyen, le rôle le plus guidé · **1 personne** · **charge moyenne** ·
 
 ### Responsabilités
 Les services Linux : GLPI (parc et tickets ITIL), Zabbix (supervision), les sauvegardes, et les éléments simulés (imprimante, poste de Paris).
