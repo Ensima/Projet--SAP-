@@ -1,6 +1,6 @@
 # Rôles du projet : qui fait quoi sur la maquette
 
-Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](TOPOLOGIE.md)) entre les 5 membres du groupe. **Ernest est chef de projet** : il coordonne et porte la documentation. Les 4 autres membres prennent chacun une brique technique.
+Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposition_logiciel_maquette/TOPOLOGIE.md)) entre les 5 membres du groupe. **Ernest est chef de projet** : il coordonne et porte la documentation. Les 4 autres membres prennent chacun une brique technique.
 
 > Remplacez « Membre A/B/C/D » par vos prénoms une fois les rôles choisis.
 
