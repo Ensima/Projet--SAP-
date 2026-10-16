@@ -2,7 +2,7 @@
 
 Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposition_logiciel_maquette/TOPOLOGIE.md)) entre les 5 membres du groupe. **Ernest est chef de projet** : il coordonne et porte la documentation. Les 4 autres membres possèdent chacun **une** brique technique.
 
-**Effectif : 5 personnes, une seule personne par rôle.** Ernest (chef de projet) + Membre A + Membre B + Membre C + Rayan = 5. Personne ne tient deux rôles, aucun rôle n'est partagé.
+**Effectif : 5 personnes, une seule personne par rôle.** Ernest (chef de projet) + Nicolas + Gabriel + Matthieu + Rayan = 5. Personne ne tient deux rôles, aucun rôle n'est partagé.
 
 > Remplacez « Membre A/B/C » par les prénoms une fois les rôles choisis.
 
