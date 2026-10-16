@@ -179,7 +179,7 @@ Les services Linux : GLPI (parc et tickets ITIL), Zabbix (supervision), les sauv
 6. Ajouter les VPCS (IMP-LILLE 10.1.40.10, PC-PARIS) et vérifier qu'ils apparaissent dans Zabbix (ping ICMP).
 7. Facultatif, si le crédit Azure le permet : envoyer une sauvegarde vers Azure Blob Storage.
 
-### Pour bien démarrer (Voldemort)
+### Pour bien démarrer
 - **Ordre à suivre** : Debian d'abord, puis GLPI, puis Zabbix. Ne passe à l'étape suivante que quand la précédente marche.
 - **Suis les procédures officielles** : la documentation d'installation de GLPI, et la page *Download* de zabbix.com, où tu choisis ta version de Debian et le site te donne les commandes exactes à copier.
 - **Paquets de base pour GLPI** sur Debian :
@@ -223,7 +223,7 @@ Ce qu'il faut retenir : **les rôles 3 et 4 n'attendent pas** le réseau pour co
 | Moment | Ernest (chef de projet) | Gabriel et Nicolas : 1. Réseau | Ernest : 2. Pare-feu / Azure | Matthieu : 3. Windows | Rayan : 4. Services |
 |---|---|---|---|---|---|
 | **Avant la semaine** | Rôles, RACI, tableau de suivi, choix du PC maquette | Installer GNS3 + GNS3 VM | Créer le compte Azure et l'alerte budget | Télécharger les ISO Windows | Rassembler les ISO et procédures d'installation |
-| **J1** | Lancement, point du soir (dont Voldemort) | Squelette GNS3 + R-FAI | pfSense Lille et Paris (WAN, VLAN) | SRV-AD01 en local (AD, DNS) | SRV-GLPI en local (GLPI) |
+| **J1** | Lancement, point du soir | Squelette GNS3 + R-FAI | pfSense Lille et Paris (WAN, VLAN) | SRV-AD01 en local (AD, DNS) | SRV-GLPI en local (GLPI) |
 | **J2** | Suivi, début du PowerPoint | Switchs, VLAN, export du projet | DHCP, règles, tunnel Lille ↔ Paris | OU, utilisateurs, GPO | Zabbix en local |
 | **J3** | Assemblage sur le PC maquette avec tous | Assemblage, câblage final | Tunnel Azure (plan B si besoin) | Import des VM, PC-LILLE joint au domaine | Import, agents |
 | **J4** | Checklist de tests, répétition de la démo | Corrections | Finir Azure, mesurer le coût | Entra Connect + MFA | Sauvegarde + test de restauration |
@@ -257,7 +257,6 @@ R = réalise, A = valide (responsable final), C = consulté, I = informé.
 | Le crédit Azure est épuisé | Moyenne | Moyen | Alerte budget, arrêt des VM, suppression de la passerelle après chaque séance |
 | Versions GNS3 client / GNS3 VM différentes | Moyenne | Moyen | Même version partout, vérifiée avant la semaine |
 | Une brique n'est pas prête le jour de la démo | Moyenne | Élevé | Captures d'écran et vidéo de secours faites dès J4 |
-| Voldemort bloqué sur une étape | Moyenne | Moyen |  |
 | Membre absent | Faible | Moyen | Chaque rôle documente ses étapes au fil de l'eau (configurations sur GitHub) |
 
 ## Règles de travail en équipe
