@@ -10,10 +10,10 @@ Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposit
 
 | Rôle | Qui (1 personne) | Difficulté | Charge | Avec qui il travaille |
 |---|---|---|---|---|
-| **Chef de projet** | Ernest | ★☆☆ technique, ★★★ organisation | Élevée | Tout le monde ; suit Rayan chaque jour |
+| **Chef de projet** | Ernest | ★☆☆ technique, ★★★ organisation | Élevée | Tout le monde  |
 | **1. Réseau GNS3** | Membre A | ★★★ difficile | Élevée | Travaille en duo avec B (réseau et pare-feu sont liés) |
 | **2. Pare-feu et Azure** | Membre B | ★★★ difficile | Élevée | Travaille en duo avec A |
-| **3. Serveurs Windows** | Membre C | ★★☆ moyen | Moyenne | **Parrain de Rayan** ; fournit l'AD aux rôles 2 et 4 |
+| **3. Serveurs Windows** | Membre C | ★★☆ moyen | Moyenne |  fournit l'AD aux rôles 2 et 4 |
 | **4. Services et supervision** | Rayan | ★★☆ moyen, le plus guidé | Moyenne | Demande de l'aide à C (parrain), puis à Ernest |
 
 Comment choisir :
