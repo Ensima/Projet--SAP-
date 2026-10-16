@@ -6,8 +6,13 @@ Fichiers de cette partie :
 
 | Fichier | Contenu |
 |---|---|
-| [`schema_infrastructure.drawio`](schema_infrastructure.drawio) | Schéma global éditable (ouvrir sur [app.diagrams.net](https://app.diagrams.net) ou l'extension VS Code « Draw.io Integration ») |
+| [`schema_infrastructure.png`](schema_infrastructure.png) / [`.pdf`](schema_infrastructure.pdf) | Schéma global à consulter ou insérer dans le PowerPoint |
+| [`schema_infrastructure.drawio`](schema_infrastructure.drawio) | Même schéma, version modifiable (voir ci-dessous) |
 | [`budget_partie1.xlsx`](budget_partie1.xlsx) | Budget avec formules : onglet *Hypothèses* modifiable (cellules jaunes), le reste se recalcule |
+
+**Modifier le schéma :** télécharger `schema_infrastructure.drawio`, aller sur [app.diagrams.net](https://app.diagrams.net), choisir « Appareil » comme emplacement d'enregistrement, puis *Fichier → Ouvrir depuis → Appareil* et sélectionner le fichier (ou le glisser-déposer dans la page). Export pour le PowerPoint : *Fichier → Exporter en → PNG*. Alternatives : l'application draw.io Desktop, ou l'extension VS Code « Draw.io Integration ».
+
+![Schéma d'infrastructure](schema_infrastructure.png)
 
 ---
 
