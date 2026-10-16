@@ -14,13 +14,13 @@ Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposit
 | **1. Réseau GNS3** | Membre A | ★★★ difficile | Élevée | Travaille en duo avec B (réseau et pare-feu sont liés) |
 | **2. Pare-feu et Azure** | Membre B | ★★★ difficile | Élevée | Travaille en duo avec A |
 | **3. Serveurs Windows** | Membre C | ★★☆ moyen | Moyenne |  fournit l'AD aux rôles 2 et 4 |
-| **4. Services et supervision** | Rayan | ★★☆ moyen, le plus guidé | Moyenne | Demande de l'aide à C (parrain), puis à Ernest |
+| **4. Services et supervision** | Rayan | ★★☆ moyen, le plus guidé | Moyenne |
 
 Comment choisir :
 - **Rôle 1** : la personne la plus à l'aise en réseau (VLAN, routage, Cisco).
 - **Rôle 2** : quelqu'un de curieux et patient. C'est la brique la plus délicate (tunnel IPsec, NAT, Azure). Ernest ne fait pas la technique, il suit seulement le coût Azure pour le budget.
 - **Rôle 3** : quelqu'un qui connaît Windows Server, ou qui veut l'apprendre (c'est le cœur du métier d'ASR).
-- **Rôle 4 : Rayan.** C'est la brique la plus guidée : des logiciels avec des procédures d'installation officielles pas à pas, peu de dépendances au début, et un parrain (Membre C) à qui demander de l'aide.
+- **Rôle 4 : Rayan.** C'est la brique la plus guidée : des logiciels avec des procédures d'installation officielles pas à pas, peu de dépendances au début.
 
 **Règle d'or : une seule maquette de référence.** Tout est assemblé sur **un PC costaud** (32 Go de RAM si possible, 16 Go minimum), appelé « PC maquette ». Chacun prépare et teste ses VM chez lui, puis les exporte (format `.ova`) sur le PC maquette.
 
@@ -177,7 +177,7 @@ Les services Linux : GLPI (parc et tickets ITIL), Zabbix (supervision), les sauv
 1. Créer la VM **SRV-GLPI** (Debian) chez soi : adresse fixe 10.1.20.20, passerelle 10.1.20.1.
 2. Installer **GLPI**, puis créer les entités (un site = une entité) et les catégories de tickets. Préparer 2 ou 3 tickets de démo (incident, demande).
 3. Installer **Zabbix** et ajouter les hôtes à superviser : les deux pfSense (SNMP), SRV-AD01 et PC-LILLE (agent).
-4. Une fois sur le PC maquette : installer les agents GLPI et Zabbix sur les machines Windows, avec l'aide du rôle 3.
+4. Une fois sur le PC maquette : installer les agents GLPI et Zabbix sur les machines Windows
 5. Mettre en place une **sauvegarde simple** : une sauvegarde quotidienne de la base GLPI et des configurations pfSense, et une restauration testée au moins une fois (argument PRA).
 6. Ajouter les VPCS (IMP-LILLE 10.1.40.10, PC-PARIS) et vérifier qu'ils apparaissent dans Zabbix (ping ICMP).
 7. Facultatif, si le crédit Azure le permet : envoyer une sauvegarde vers Azure Blob Storage.
@@ -193,7 +193,7 @@ Les services Linux : GLPI (parc et tickets ITIL), Zabbix (supervision), les sauv
 - **Prends une capture d'écran à chaque étape réussie** : elles servent pour la doc et la soutenance.
 - **Fais un snapshot de la VM** avant chaque grosse étape. Si ça casse, tu reviens en arrière en un clic.
 - **Bloqué plus d'une heure ?** Demande à ton parrain (Membre C), puis à Ernest au point du soir.
-- **Si le temps manque**, la priorité est GLPI qui fonctionne, puis Zabbix qui supervise au moins les deux pfSense par ping. Les sauvegardes peuvent être faites avec l'aide du parrain le J4.
+- **Si le temps manque**, la priorité est GLPI qui fonctionne, puis Zabbix qui supervise au moins les deux pfSense par ping.
 
 ### Dépendances
 - Peut commencer **dès J1, chez soi** (étapes 1 à 3, en local).
@@ -248,7 +248,6 @@ R = réalise, A = valide (responsable final), C = consulté, I = informé.
 | Active Directory, GPO | A | I | I | R | C |
 | Entra Connect | A | I | C | R | I |
 | GLPI, Zabbix, sauvegardes | A | I | C | C | R |
-| Parrainage et aide à Rayan | A | I | I | R | C |
 | Assemblage sur le PC maquette | A/R | R | R | R | R |
 | Documentation et README | A/R | C | C | C | C |
 | Soutenance | A/R | R | R | R | R |
