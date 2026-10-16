@@ -32,6 +32,8 @@ Une **architecture hybride** : les données de santé et les applications critiq
 ```
 .
 ├── README.md                          ce fichier
+├── azure/
+│   └── README.md                      la partie cloud : quoi faire sur Azure, étape par étape
 ├── gestion_projet/
 │   └── ROLES_PROJET.md                qui fait quoi : rôles, difficulté, installations, planning, RACI
 ├── partie1/
@@ -50,3 +52,4 @@ Une **architecture hybride** : les données de santé et les applications critiq
 
 - Schémas : [diagrams.net](https://app.diagrams.net) (fichiers `.drawio`)
 - Maquette : voir [proposition_logiciel_maquette](proposition_logiciel_maquette/README.md) (choix à faire en groupe)
+- Cloud : voir [azure](azure/README.md) (étapes Azure pour toute l'équipe)
