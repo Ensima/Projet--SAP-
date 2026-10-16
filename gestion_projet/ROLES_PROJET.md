@@ -189,7 +189,6 @@ Les services Linux : GLPI (parc et tickets ITIL), Zabbix (supervision), les sauv
   ```
 - **Prends une capture d'écran à chaque étape réussie** : elles servent pour la doc et la soutenance.
 - **Fais un snapshot de la VM** avant chaque grosse étape. Si ça casse, tu reviens en arrière en un clic.
-- **Bloqué plus d'une heure ?** Demande à ton parrain (Matthieu), puis à Ernest au point du soir.
 - **Si le temps manque**, la priorité est GLPI qui fonctionne, puis Zabbix qui supervise au moins les deux pfSense par ping.
 
 ### Dépendances
@@ -223,10 +222,10 @@ Ce qu'il faut retenir : **les rôles 3 et 4 n'attendent pas** le réseau pour co
 
 | Moment | Ernest (chef de projet) | Gabriel et Nicolas : 1. Réseau | Ernest : 2. Pare-feu / Azure | Matthieu : 3. Windows | Rayan : 4. Services |
 |---|---|---|---|---|---|
-| **Avant la semaine** | Rôles, RACI, tableau de suivi, choix du PC maquette | Installer GNS3 + GNS3 VM | Créer le compte Azure et l'alerte budget | Télécharger les ISO Windows | Télécharger l'ISO Debian, installer une Debian d'essai avec son parrain |
+| **Avant la semaine** | Rôles, RACI, tableau de suivi, choix du PC maquette | Installer GNS3 + GNS3 VM | Créer le compte Azure et l'alerte budget | Télécharger les ISO Windows | |
 | **J1** | Lancement, point du soir (dont Voldemort) | Squelette GNS3 + R-FAI | pfSense Lille et Paris (WAN, VLAN) | SRV-AD01 en local (AD, DNS) | SRV-GLPI en local (GLPI) |
 | **J2** | Suivi, début du PowerPoint | Switchs, VLAN, export du projet | DHCP, règles, tunnel Lille ↔ Paris | OU, utilisateurs, GPO | Zabbix en local |
-| **J3** | Assemblage sur le PC maquette avec tous | Assemblage, câblage final | Tunnel Azure (plan B si besoin) | Import des VM, PC-LILLE joint au domaine | Import, agents, supervision (avec le parrain) |
+| **J3** | Assemblage sur le PC maquette avec tous | Assemblage, câblage final | Tunnel Azure (plan B si besoin) | Import des VM, PC-LILLE joint au domaine | Import, agents |
 | **J4** | Checklist de tests, répétition de la démo | Corrections | Finir Azure, mesurer le coût | Entra Connect + MFA | Sauvegarde + test de restauration |
 | **J5** | Soutenance | Soutenance | Soutenance, puis suppression des ressources Azure | Soutenance | Soutenance |
 
@@ -258,7 +257,7 @@ R = réalise, A = valide (responsable final), C = consulté, I = informé.
 | Le crédit Azure est épuisé | Moyenne | Moyen | Alerte budget, arrêt des VM, suppression de la passerelle après chaque séance |
 | Versions GNS3 client / GNS3 VM différentes | Moyenne | Moyen | Même version partout, vérifiée avant la semaine |
 | Une brique n'est pas prête le jour de la démo | Moyenne | Élevé | Captures d'écran et vidéo de secours faites dès J4 |
-| Voldemort bloqué sur une étape | Moyenne | Moyen | Parrain (Matthieu) à appeler après 1 h de blocage, point du soir avec Ernest, priorités définies (GLPI d'abord) |
+| Voldemort bloqué sur une étape | Moyenne | Moyen |  |
 | Membre absent | Faible | Moyen | Chaque rôle documente ses étapes au fil de l'eau (configurations sur GitHub) |
 
 ## Règles de travail en équipe
