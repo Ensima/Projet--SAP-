@@ -30,16 +30,17 @@ Une **architecture hybride** : les données de santé et les applications critiq
 ```
 .
 ├── README.md                          ce fichier
-└── partie1/
-    ├── README.md                      dossier de la mission 1
-    ├── schema_infrastructure.png/.pdf schéma global à consulter
-    ├── schema_infrastructure.drawio   schéma modifiable (diagrams.net)
-    ├── budget_partie1.xlsx            budget avec hypothèses modifiables
-    └── couts_options/                 coûts théoriques des 3 options (A, B, C)
+├── partie1/
+│   ├── README.md                      dossier de la mission 1
+│   ├── schema_infrastructure.png/.pdf schéma global à consulter
+│   ├── schema_infrastructure.drawio   schéma modifiable (diagrams.net)
+│   ├── budget_partie1.xlsx            budget avec hypothèses modifiables
+│   └── couts_options/                 coûts théoriques des 3 options (A, B, C)
+└── proposition_logiciel_maquette/
+    └── README.md                      logiciels de maquette et test Azure (à choisir en groupe)
 ```
 
 ## Outils
 
 - Schémas : [diagrams.net](https://app.diagrams.net) (fichiers `.drawio`)
-- Maquette réseau : Cisco Packet Tracer
-- Maquette serveurs : VirtualBox, VMware Workstation ou Proxmox (Windows Server, pfSense/OPNsense, Zabbix, GLPI)
+- Maquette : voir [proposition_logiciel_maquette](proposition_logiciel_maquette/README.md) (choix à faire en groupe)
