@@ -53,4 +53,6 @@ Notre solution est **hybride** : les données de santé partent chez un héberge
 
 Le tunnel traverse plusieurs NAT (GNS3, puis la box). Si l'IPsec bloque après une demi-journée, le **plan B** est un tunnel **WireGuard** vers une petite VM Azure, qui passe beaucoup mieux les NAT. Dernier recours : faire la démo depuis le réseau de l'école.
 
+**En Terraform** : tout ce qui est créé ci-dessus côté Azure peut l'être en une commande avec le dossier [terraform/](terraform/README.md).
+
 Voir aussi : [la topologie de la maquette](../proposition_logiciel_maquette/TOPOLOGIE.md) et [les rôles du projet](../gestion_projet/ROLES_PROJET.md).
