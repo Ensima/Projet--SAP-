@@ -12,7 +12,7 @@ Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposit
 | **1. Réseau GNS3** | Gabriel et Nicolas | ★★★ difficile | Élevée | Travaillent avec Ernest (réseau et pare-feu sont liés) |
 | **2. Pare-feu et Azure** | Ernest (en plus du pilotage) | ★★★ difficile | Élevée | Travaille avec Gabriel et Nicolas |
 | **3. Serveurs Windows** | Matthieu | ★★☆ moyen | Moyenne |  fournit l'AD aux rôles 2 et 4 |
-| **4. Services et supervision** |  | ★★☆ moyen, le plus guidé | Moyenne |
+| **4. Services et supervision** | Rayan | ★★☆ moyen, le plus guidé | Moyenne |
 
 Comment choisir :
 - **Rôle 1** : la personne la plus à l'aise en réseau (VLAN, routage, Cisco).
