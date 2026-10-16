@@ -65,6 +65,8 @@ Le raisonnement à présenter au jury est donc : **les données de santé parten
 | GreenIT | 5 salles à refroidir | Salles réduites à des baies réseau | Idem B |
 | Intérêt pédagogique (parties 2 et 3) | Fort | Fort : AD, DNS, DHCP, VPN, supervision restent à configurer | Plus faible : peu de serveurs à monter |
 
+**Coûts théoriques des trois options :** voir [`couts_options/`](couts_options/README.md). Sur 5 ans : A ≈ 2,28 M€, B ≈ 1,99 M€, C ≈ 2,16 M€.
+
 **Recommandation : option B.** Elle répond à HDS, au 99,9 % et à la taille de l'équipe, et garde assez de serveurs pour les parties 2 et 3 (déployer, puis maintenir et sécuriser).
 
 ---

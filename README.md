@@ -34,7 +34,8 @@ Une **architecture hybride** : les données de santé et les applications critiq
     ├── README.md                      dossier de la mission 1
     ├── schema_infrastructure.png/.pdf schéma global à consulter
     ├── schema_infrastructure.drawio   schéma modifiable (diagrams.net)
-    └── budget_partie1.xlsx            budget avec hypothèses modifiables
+    ├── budget_partie1.xlsx            budget avec hypothèses modifiables
+    └── couts_options/                 coûts théoriques des 3 options (A, B, C)
 ```
 
 ## Outils
