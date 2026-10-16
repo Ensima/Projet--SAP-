@@ -57,7 +57,7 @@ Dossier de pilotage (RACI, planning, suivi, risques), README à jour, schémas, 
 
 ## Rôle 1 : Réseau GNS3 (Membre A)
 
-**Difficulté** : ★★★ difficile · **1 personne** · **charge élevée** · **duo avec le rôle 2**
+**Difficulté** : ★★★ difficile · **Gabriel/Nicolas** · **charge élevée** · **duo avec le rôle 2**
 
 ### Responsabilités
 Construire le « squelette » de la maquette dans GNS3 : Internet simulé, sites, switchs et VLAN.
@@ -93,7 +93,7 @@ Projet GNS3 exporté, configuration de VyOS, fiche d'adressage et de câblage, c
 
 ## Rôle 2 : Pare-feu et Azure (Membre B)
 
-**Difficulté** : ★★★ difficile, la brique la plus délicate · **1 personne** · **charge élevée** · **duo avec le rôle 1**
+**Difficulté** : ★★★ difficile, la brique la plus délicate · **Ernest** · **charge élevée** · **duo avec le rôle 1**
 
 ### Responsabilités
 Les pfSense des sites (VLAN, DHCP, règles, VPN entre sites) et toute la partie Azure (réseau, VM, tunnel).
@@ -127,7 +127,7 @@ Configurations pfSense exportées (*Diagnostics → Backup*), tableau des règle
 
 ## Rôle 3 : Serveurs Windows (Membre C)
 
-**Difficulté** : ★★☆ moyen · **1 personne** · **charge moyenne** · **parrain de Rayan**
+**Difficulté** : ★★☆ moyen · **Matthieu** · **charge moyenne** · **parrain de Rayan**
 
 ### Responsabilités
 L'annuaire et les services Windows : Active Directory, DNS, GPO, poste client, synchronisation vers Entra ID.
