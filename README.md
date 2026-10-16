@@ -21,7 +21,7 @@ Projet fil rouge CESI, formation **Administrateur Systèmes et Réseaux** : refo
 
 Le pilotage, transverse aux trois missions, couvre le RACI, le tableau de bord d'avancement, l'étude des risques et la planification.
 
-**Équipe :** 5 personnes. Ernest est chef de projet, et 4 membres se répartissent les briques techniques de la maquette. Voir [les rôles du projet](gestion_projet/ROLES_PROJET.md).
+**Équipe :** 5 personnes, une par rôle. Ernest est chef de projet ; les membres A, B, C et Rayan possèdent chacun une brique technique de la maquette. Voir [les rôles du projet](gestion_projet/ROLES_PROJET.md).
 
 ## Solution retenue
 

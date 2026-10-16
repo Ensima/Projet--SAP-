@@ -1,24 +1,26 @@
 # Rôles du projet : qui fait quoi sur la maquette
 
-Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposition_logiciel_maquette/TOPOLOGIE.md)) entre les 5 membres du groupe. **Ernest est chef de projet** : il coordonne et porte la documentation. Les 4 autres membres prennent chacun une brique technique.
+Ce document répartit le travail de la maquette (voir [TOPOLOGIE.md](../proposition_logiciel_maquette/TOPOLOGIE.md)) entre les 5 membres du groupe. **Ernest est chef de projet** : il coordonne et porte la documentation. Les 4 autres membres possèdent chacun **une** brique technique.
 
-> Remplacez « Membre A/B/C/D » par vos prénoms une fois les rôles choisis.
+**Effectif : 5 personnes, une seule personne par rôle.** Ernest (chef de projet) + Membre A + Membre B + Membre C + Rayan = 5. Personne ne tient deux rôles, aucun rôle n'est partagé.
+
+> Remplacez « Membre A/B/C » par les prénoms une fois les rôles choisis.
 
 ## Vue d'ensemble
 
-| Rôle | Qui | Difficulté | Charge | Binôme / renfort |
+| Rôle | Qui (1 personne) | Difficulté | Charge | Avec qui il travaille |
 |---|---|---|---|---|
-| **Chef de projet** | Ernest | ★★☆ technique, ★★★ organisation | Élevée | Renfort sur le rôle 2 (Azure) |
-| **1. Réseau GNS3** | Membre A | ★★★ difficile | Élevée | Travaille avec le 2 |
-| **2. Pare-feu et Azure** | Membre B (+ Ernest en renfort) | ★★★ difficile | Élevée | Travaille avec le 1 |
-| **3. Serveurs Windows** | Membre C | ★★☆ moyen | Moyenne | Fournit l'AD au 2 et au 4 |
-| **4. Services et supervision** | Membre D | ★★☆ moyen | Moyenne | Dépend du 1 et du 3 |
+| **Chef de projet** | Ernest | ★☆☆ technique, ★★★ organisation | Élevée | Tout le monde ; suit Rayan chaque jour |
+| **1. Réseau GNS3** | Membre A | ★★★ difficile | Élevée | Travaille en duo avec B (réseau et pare-feu sont liés) |
+| **2. Pare-feu et Azure** | Membre B | ★★★ difficile | Élevée | Travaille en duo avec A |
+| **3. Serveurs Windows** | Membre C | ★★☆ moyen | Moyenne | **Parrain de Rayan** ; fournit l'AD aux rôles 2 et 4 |
+| **4. Services et supervision** | Rayan | ★★☆ moyen, le plus guidé | Moyenne | Demande de l'aide à C (parrain), puis à Ernest |
 
 Comment choisir :
 - **Rôle 1** : la personne la plus à l'aise en réseau (VLAN, routage, Cisco).
-- **Rôle 2** : quelqu'un de curieux et patient. C'est la brique la plus délicate (tunnel IPsec, NAT, Azure). Ernest l'épaule parce que le compte Azure et son coût touchent aussi au budget.
+- **Rôle 2** : quelqu'un de curieux et patient. C'est la brique la plus délicate (tunnel IPsec, NAT, Azure). Ernest ne fait pas la technique, il suit seulement le coût Azure pour le budget.
 - **Rôle 3** : quelqu'un qui connaît Windows Server, ou qui veut l'apprendre (c'est le cœur du métier d'ASR).
-- **Rôle 4** : quelqu'un d'à l'aise avec Linux et la ligne de commande.
+- **Rôle 4 : Rayan.** C'est la brique la plus guidée : des logiciels avec des procédures d'installation officielles pas à pas, peu de dépendances au début, et un parrain (Membre C) à qui demander de l'aide.
 
 **Règle d'or : une seule maquette de référence.** Tout est assemblé sur **un PC costaud** (32 Go de RAM si possible, 16 Go minimum), appelé « PC maquette ». Chacun prépare et teste ses VM chez lui, puis les exporte (format `.ova`) sur le PC maquette.
 
@@ -26,7 +28,7 @@ Comment choisir :
 
 ## Chef de projet : Ernest
 
-**Difficulté** : ★★☆ technique, ★★★ organisation · **1 personne** · **charge élevée**
+**Difficulté** : ★☆☆ technique, ★★★ organisation · **1 personne** · **charge élevée**
 
 ### Responsabilités
 - Organiser l'équipe : RACI, planning, tableau de suivi d'avancement, registre des risques (exigés par le Contexte SAP, §1.3).
@@ -34,17 +36,18 @@ Comment choisir :
 - Mettre à jour le schéma d'infrastructure, le budget et le planning à chaque partie.
 - Préparer la soutenance : PowerPoint commun, déroulé de la démo, répartition de la parole.
 - Faire passer la **checklist de tests** (TOPOLOGIE.md, étape 7) avant la soutenance.
-- **Renfort technique** : avec le membre B, créer le compte Azure for Students, poser l'alerte budget et suivre la consommation.
+- **Suivi du coût Azure** (pas de technique) : le membre B ajoute Ernest en lecture sur l'abonnement, et Ernest vérifie le coût dans *Cost Management* pour le budget.
+- **Suivi de Rayan** : un point de 5 minutes chaque soir sur ce qui est fait et ce qui bloque.
 
 ### À installer
 - [diagrams.net](https://app.diagrams.net) (en ligne ou draw.io Desktop), Excel ou LibreOffice, PowerPoint.
 - Git (ou GitHub Desktop) pour mettre à jour le dépôt.
-- Un compte Azure for Students (avec le membre B).
+- Un accès en lecture à l'abonnement Azure du groupe (donné par le membre B).
 
 ### Comment faire
 1. Au lancement : faire choisir les rôles, remplir le tableau RACI ci-dessous, créer le tableau de suivi (un tableau GitHub *Projects* ou un simple Excel : tâche, responsable, état, date).
 2. Chaque jour : un point de 10 minutes le matin (fait hier, à faire aujourd'hui, blocages) et la mise à jour du tableau.
-3. Débloquer : si une brique bloque plus d'une demi-journée, réaffecter de l'aide (souvent vers le rôle 2).
+3. Débloquer : si une brique bloque plus d'une demi-journée, demander au membre le plus avancé de donner un coup de main pendant une heure. On garde chaque rôle à son propriétaire, on prête juste de l'aide.
 4. Fin de semaine : récupérer les captures d'écran et les configurations de chacun, finaliser le PowerPoint, faire une répétition générale de la démo.
 
 ### Livrables
@@ -54,7 +57,7 @@ Dossier de pilotage (RACI, planning, suivi, risques), README à jour, schémas, 
 
 ## Rôle 1 : Réseau GNS3 (Membre A)
 
-**Difficulté** : ★★★ difficile · **1 personne** · **charge élevée** · **binôme avec le rôle 2**
+**Difficulté** : ★★★ difficile · **1 personne** · **charge élevée** · **duo avec le rôle 2**
 
 ### Responsabilités
 Construire le « squelette » de la maquette dans GNS3 : Internet simulé, sites, switchs et VLAN.
@@ -88,9 +91,9 @@ Projet GNS3 exporté, configuration de VyOS, fiche d'adressage et de câblage, c
 
 ---
 
-## Rôle 2 : Pare-feu et Azure (Membre B + Ernest en renfort)
+## Rôle 2 : Pare-feu et Azure (Membre B)
 
-**Difficulté** : ★★★ difficile, la brique la plus délicate · **1 personne + renfort** · **charge élevée** · **binôme avec le rôle 1**
+**Difficulté** : ★★★ difficile, la brique la plus délicate · **1 personne** · **charge élevée** · **duo avec le rôle 1**
 
 ### Responsabilités
 Les pfSense des sites (VLAN, DHCP, règles, VPN entre sites) et toute la partie Azure (réseau, VM, tunnel).
@@ -108,7 +111,7 @@ Les pfSense des sites (VLAN, DHCP, règles, VPN entre sites) et toute la partie 
 2. Vérifier le routage entre VLAN : un VPCS du VLAN 10 doit pinguer la passerelle du VLAN 20.
 3. Monter le **tunnel IPsec Lille ↔ Paris**, puis vérifier qu'un VPCS de Paris pingue un VPCS de Lille.
 4. Écrire les **règles de pare-feu** minimales (utilisateurs → serveurs sur les ports utiles, le reste bloqué) et les documenter : elles serviront à la partie 3.
-5. **Azure** (avec Ernest) : créer le groupe de ressources `RG-SAP-MAQUETTE` en France Central, **poser une alerte budget**, puis créer le VNet 10.100.0.0/16, la VM-AZ01 et le point d'entrée VPN (TOPOLOGIE.md, étape 6).
+5. **Azure** : créer le compte Azure for Students, le groupe de ressources `RG-SAP-MAQUETTE` en France Central, **poser une alerte budget**, ajouter Ernest en lecture pour qu'il suive le coût, puis créer le VNet 10.100.0.0/16, la VM-AZ01 et le point d'entrée VPN (TOPOLOGIE.md, étape 6).
 6. Monter le **tunnel Lille ↔ Azure**, lancé par pfSense. Si ça ne monte pas après une demi-journée, passer au plan B WireGuard sans attendre.
 7. Arrêter les VM Azure et supprimer la passerelle VPN entre deux séances de travail, pour ne pas consommer le crédit.
 
@@ -124,7 +127,7 @@ Configurations pfSense exportées (*Diagnostics → Backup*), tableau des règle
 
 ## Rôle 3 : Serveurs Windows (Membre C)
 
-**Difficulté** : ★★☆ moyen · **1 personne** · **charge moyenne**
+**Difficulté** : ★★☆ moyen · **1 personne** · **charge moyenne** · **parrain de Rayan**
 
 ### Responsabilités
 L'annuaire et les services Windows : Active Directory, DNS, GPO, poste client, synchronisation vers Entra ID.
@@ -155,9 +158,9 @@ VM exportées, document « annuaire » (OU, groupes, utilisateurs), liste des GP
 
 ---
 
-## Rôle 4 : Services et supervision (Membre D)
+## Rôle 4 : Services et supervision (Rayan)
 
-**Difficulté** : ★★☆ moyen · **1 personne** · **charge moyenne**
+**Difficulté** : ★★☆ moyen, le rôle le plus guidé · **1 personne** · **charge moyenne** · **parrain : Membre C**
 
 ### Responsabilités
 Les services Linux : GLPI (parc et tickets ITIL), Zabbix (supervision), les sauvegardes, et les éléments simulés (imprimante, poste de Paris).
@@ -179,6 +182,19 @@ Les services Linux : GLPI (parc et tickets ITIL), Zabbix (supervision), les sauv
 6. Ajouter les VPCS (IMP-LILLE 10.1.40.10, PC-PARIS) et vérifier qu'ils apparaissent dans Zabbix (ping ICMP).
 7. Facultatif, si le crédit Azure le permet : envoyer une sauvegarde vers Azure Blob Storage.
 
+### Pour bien démarrer (Rayan)
+- **Ordre à suivre** : Debian d'abord, puis GLPI, puis Zabbix. Ne passe à l'étape suivante que quand la précédente marche.
+- **Suis les procédures officielles** : la documentation d'installation de GLPI, et la page *Download* de zabbix.com, où tu choisis ta version de Debian et le site te donne les commandes exactes à copier.
+- **Paquets de base pour GLPI** sur Debian :
+  ```
+  sudo apt update
+  sudo apt install apache2 mariadb-server php php-mysql php-xml php-curl php-gd php-intl php-mbstring php-zip php-ldap php-bz2
+  ```
+- **Prends une capture d'écran à chaque étape réussie** : elles servent pour la doc et la soutenance.
+- **Fais un snapshot de la VM** avant chaque grosse étape. Si ça casse, tu reviens en arrière en un clic.
+- **Bloqué plus d'une heure ?** Demande à ton parrain (Membre C), puis à Ernest au point du soir.
+- **Si le temps manque**, la priorité est GLPI qui fonctionne, puis Zabbix qui supervise au moins les deux pfSense par ping. Les sauvegardes peuvent être faites avec l'aide du parrain le J4.
+
 ### Dépendances
 - Peut commencer **dès J1, chez soi** (étapes 1 à 3, en local).
 - A besoin du réseau (rôles 1 et 2) et de l'AD (rôle 3) pour les étapes 4 à 6.
@@ -195,9 +211,9 @@ flowchart LR
   R1["1. Réseau GNS3<br/>squelette"] --> R2["2. pfSense<br/>VLAN, DHCP, VPN"]
   R2 --> R3b["3. Postes joints<br/>au domaine"]
   R3a["3. AD en local<br/>(dès J1)"] --> R3b
-  R3b --> R4b["4. Agents GLPI/Zabbix<br/>sur les machines"]
-  R4a["4. GLPI + Zabbix<br/>en local (dès J1)"] --> R4b
-  R2 --> AZ["2 + Ernest<br/>Tunnel Azure"]
+  R3b --> R4b["4. Rayan<br/>agents GLPI/Zabbix"]
+  R4a["4. Rayan<br/>GLPI + Zabbix en local (dès J1)"] --> R4b
+  R2 --> AZ["2. Tunnel Azure"]
   R3b --> EC["3. Entra Connect"]
   AZ --> DEMO["Ernest<br/>Tests + démo"]
   EC --> DEMO
@@ -208,12 +224,12 @@ Ce qu'il faut retenir : **les rôles 3 et 4 n'attendent pas** le réseau pour co
 
 ## Planning conseillé (semaine de 5 jours)
 
-| Moment | Ernest (chef de projet) | 1. Réseau | 2. Pare-feu / Azure | 3. Windows | 4. Services |
+| Moment | Ernest (chef de projet) | A : 1. Réseau | B : 2. Pare-feu / Azure | C : 3. Windows | Rayan : 4. Services |
 |---|---|---|---|---|---|
-| **Avant la semaine** | Rôles, RACI, tableau de suivi, choix du PC maquette | Installer GNS3 + GNS3 VM | Créer le compte Azure (avec Ernest) | Télécharger les ISO Windows | Télécharger l'ISO Debian |
-| **J1** | Lancement, point du soir | Squelette GNS3 + R-FAI | pfSense Lille et Paris (WAN, VLAN) | SRV-AD01 en local (AD, DNS) | SRV-GLPI en local (GLPI) |
+| **Avant la semaine** | Rôles, RACI, tableau de suivi, choix du PC maquette | Installer GNS3 + GNS3 VM | Créer le compte Azure, alerte budget, accès lecture pour Ernest | Télécharger les ISO Windows | Télécharger l'ISO Debian, installer une Debian d'essai avec son parrain |
+| **J1** | Lancement, point du soir (dont Rayan) | Squelette GNS3 + R-FAI | pfSense Lille et Paris (WAN, VLAN) | SRV-AD01 en local (AD, DNS) | SRV-GLPI en local (GLPI) |
 | **J2** | Suivi, début du PowerPoint | Switchs, VLAN, export du projet | DHCP, règles, tunnel Lille ↔ Paris | OU, utilisateurs, GPO | Zabbix en local |
-| **J3** | Assemblage sur le PC maquette avec tous | Assemblage, câblage final | Tunnel Azure (plan B si besoin) | Import des VM, PC-LILLE joint au domaine | Import, agents, supervision |
+| **J3** | Assemblage sur le PC maquette avec tous | Assemblage, câblage final | Tunnel Azure (plan B si besoin) | Import des VM, PC-LILLE joint au domaine | Import, agents, supervision (avec le parrain) |
 | **J4** | Checklist de tests, répétition de la démo | Corrections | Finir Azure, mesurer le coût | Entra Connect + MFA | Sauvegarde + test de restauration |
 | **J5** | Soutenance | Soutenance | Soutenance, puis suppression des ressources Azure | Soutenance | Soutenance |
 
@@ -221,16 +237,18 @@ Ce qu'il faut retenir : **les rôles 3 et 4 n'attendent pas** le réseau pour co
 
 R = réalise, A = valide (responsable final), C = consulté, I = informé.
 
-| Tâche | Ernest | A (Réseau) | B (Pare-feu/Azure) | C (Windows) | D (Services) |
+| Tâche | Ernest | A (Réseau) | B (Pare-feu/Azure) | C (Windows) | Rayan (Services) |
 |---|---|---|---|---|---|
 | Planning, suivi, risques | A/R | I | I | I | I |
 | Squelette GNS3, VLAN | A | R | C | I | I |
 | pfSense, règles, VPN entre sites | A | C | R | I | I |
-| Compte Azure, budget cloud | A | I | R | I | I |
-| Tunnel vers Azure | A | C | R | I | I |
+| Compte et ressources Azure | I | I | A/R | I | I |
+| Suivi du coût Azure dans le budget | A/R | I | C | I | I |
+| Tunnel vers Azure | I | C | A/R | I | I |
 | Active Directory, GPO | A | I | I | R | C |
 | Entra Connect | A | I | C | R | I |
 | GLPI, Zabbix, sauvegardes | A | I | C | C | R |
+| Parrainage et aide à Rayan | A | I | I | R | C |
 | Assemblage sur le PC maquette | A/R | R | R | R | R |
 | Documentation et README | A/R | C | C | C | C |
 | Soutenance | A/R | R | R | R | R |
@@ -244,6 +262,7 @@ R = réalise, A = valide (responsable final), C = consulté, I = informé.
 | Le crédit Azure est épuisé | Moyenne | Moyen | Alerte budget, arrêt des VM, suppression de la passerelle après chaque séance |
 | Versions GNS3 client / GNS3 VM différentes | Moyenne | Moyen | Même version partout, vérifiée avant la semaine |
 | Une brique n'est pas prête le jour de la démo | Moyenne | Élevé | Captures d'écran et vidéo de secours faites dès J4 |
+| Rayan bloqué sur une étape | Moyenne | Moyen | Parrain (C) à appeler après 1 h de blocage, point du soir avec Ernest, priorités définies (GLPI d'abord) |
 | Membre absent | Faible | Moyen | Chaque rôle documente ses étapes au fil de l'eau (configurations sur GitHub) |
 
 ## Règles de travail en équipe
