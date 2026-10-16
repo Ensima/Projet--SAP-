@@ -242,9 +242,9 @@ R = réalise, A = valide (responsable final), C = consulté, I = informé.
 | Planning, suivi, risques | A/R | I | I | I | I |
 | Squelette GNS3, VLAN | A | R | C | I | I |
 | pfSense, règles, VPN entre sites | A | C | R | I | I |
-| Compte et ressources Azure | I | I | A/R | I | I |
+| Compte et ressources Azure | A | I | R | I | I |
 | Suivi du coût Azure dans le budget | A/R | I | C | I | I |
-| Tunnel vers Azure | I | C | A/R | I | I |
+| Tunnel vers Azure | A | C | R | I | I |
 | Active Directory, GPO | A | I | I | R | C |
 | Entra Connect | A | I | C | R | I |
 | GLPI, Zabbix, sauvegardes | A | I | C | C | R |
