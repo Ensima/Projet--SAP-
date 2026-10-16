@@ -39,7 +39,7 @@ Comment choisir :
 ### À installer
 - [diagrams.net](https://app.diagrams.net) (en ligne ou draw.io Desktop), Excel ou LibreOffice, PowerPoint.
 - Git (ou GitHub Desktop) pour mettre à jour le dépôt.
-- Un accès en lecture à l'abonnement Azure du groupe (donné par le membre B).
+- Le compte Azure for Students du groupe (Ernest le crée, voir rôle 2).
 
 ### Comment faire
 1. Au lancement : faire choisir les rôles, remplir le tableau RACI ci-dessous, créer le tableau de suivi (un tableau GitHub *Projects* ou un simple Excel : tâche, responsable, état, date).
