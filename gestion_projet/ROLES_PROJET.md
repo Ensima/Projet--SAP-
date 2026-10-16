@@ -222,7 +222,7 @@ Ce qu'il faut retenir : **les rôles 3 et 4 n'attendent pas** le réseau pour co
 
 | Moment | Ernest (chef de projet) | Gabriel et Nicolas : 1. Réseau | Ernest : 2. Pare-feu / Azure | Matthieu : 3. Windows | Rayan : 4. Services |
 |---|---|---|---|---|---|
-| **Avant la semaine** | Rôles, RACI, tableau de suivi, choix du PC maquette | Installer GNS3 + GNS3 VM | Créer le compte Azure et l'alerte budget | Télécharger les ISO Windows | |
+| **Avant la semaine** | Rôles, RACI, tableau de suivi, choix du PC maquette | Installer GNS3 + GNS3 VM | Créer le compte Azure et l'alerte budget | Télécharger les ISO Windows | Rassembler les ISO et procédures d'installation |
 | **J1** | Lancement, point du soir (dont Voldemort) | Squelette GNS3 + R-FAI | pfSense Lille et Paris (WAN, VLAN) | SRV-AD01 en local (AD, DNS) | SRV-GLPI en local (GLPI) |
 | **J2** | Suivi, début du PowerPoint | Switchs, VLAN, export du projet | DHCP, règles, tunnel Lille ↔ Paris | OU, utilisateurs, GPO | Zabbix en local |
 | **J3** | Assemblage sur le PC maquette avec tous | Assemblage, câblage final | Tunnel Azure (plan B si besoin) | Import des VM, PC-LILLE joint au domaine | Import, agents |
