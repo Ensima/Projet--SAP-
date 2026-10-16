@@ -21,6 +21,8 @@ Projet fil rouge CESI, formation **Administrateur Systèmes et Réseaux** : refo
 
 Le pilotage, transverse aux trois missions, couvre le RACI, le tableau de bord d'avancement, l'étude des risques et la planification.
 
+**Équipe :** 5 personnes. Ernest est chef de projet, et 4 membres se répartissent les briques techniques de la maquette. Voir [les rôles du projet](proposition_logiciel_maquette/ROLES_PROJET.md).
+
 ## Solution retenue
 
 Une **architecture hybride** : les données de santé et les applications critiques sont confiées à des hébergeurs certifiés HDS (IaaS sur deux régions pour le PRA, Microsoft 365, ERP médico-social en SaaS), et chaque site reçoit un réseau neuf et redondé (pare-feu SD-WAN en HA, double lien, cœur 10G, Wi-Fi 6). Seul le siège de Lille garde un petit cluster local. Le détail et les alternatives étudiées sont dans la [partie 1](partie1/README.md).
@@ -39,6 +41,7 @@ Une **architecture hybride** : les données de santé et les applications critiq
 └── proposition_logiciel_maquette/
     ├── README.md                      logiciels de maquette et test Azure (à choisir en groupe)
     ├── TOPOLOGIE.md                   topologie GNS3 + VM + Azure, adressage, pas-à-pas
+    ├── ROLES_PROJET.md                qui fait quoi : rôles, difficulté, installations, planning, RACI
     └── topologie_maquette.png/.drawio schéma de la maquette
 ```
 
